@@ -14,7 +14,7 @@ export function updateCourseSuccess(course) {
   return { type: types.UPDATE_COURSE_SUCCESS, course };
 }
 
-export function loadCoarses() {
+export function loadCourses() {
   return function(dispatch) {
     dispatch(beginAjaxCall());
     return courseApi.getAllCourses().then(courses => {
